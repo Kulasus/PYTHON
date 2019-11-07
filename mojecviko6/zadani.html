@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="UTF-8">
+  </head>
+ <body>
+
+ <h2>Zadani SPJA cv6</h2>
+
+ <ul>
+  <li>Pracujte se souborem atoms.py. Soubor playground.py zajišťuje vykreslování (jeho obsah neměňte). V časových intervalech je volána metoda tick(), kterou naleznete v souboru atoms.py.
+  <li>Zkuste přidat další atomy: atom je reprezentován čtveřicí hodnot uložených v n-tici (pozice_x, pozice_y, polomer a barva). Tyto čtveřice se vrací ve funkci tick()
+  </ul>
+ <h3>1. (1 b)</h3>
+ <p>
+ Vytvořte třídu FallDownAtom která dědí z třídy Atom. Tato třída bude obsahovat dvě třídni proměnné (pozor na třídní vs instanční proměnné) "g" a "damping" (například s hodnoty 3.0 a 0.8). 
+ </p>   
+ <h3>2. (1 b)</h3>
+ <p>
+  V tuto chvíli má tato třída mimo jiné sděděnou metodu "move". Ta je však potřeba změnit tak, aby na tento atom působila gravitace. Při každém zavolání této metody se provede přičtení hodnoty "g" k vertikální ryhlosti. 
+ </p>
+<h3>3. (1 b)</h3>
+ <p>
+  zajistěte aby u FallDownAtom nedošlo k úniku atomů z plátna/světa (všimněte si že lze měnit velikost plátna) a to tak, že když by k tomu mělo dojít, tak se budou tyto atomy nacházet na hranici plátna/světa.
+ </p>     
+<h3>4. (1 b)</h3>
+ <p>
+  je potřeba zajistit, aby atom (FallDownAtom) při nárazu se spodní hranici došlo ke zpomalení vertikální i horizontální rychlosti (rychlost * damping)
+  </p>
+<h3>5. (1 b)</h3>
+ <p>
+  Ve třídě ExampleWorld změňte metodu random_atom tak, aby náhodně vygenerovala instanci Atom nebo FallDownAtom s náhodnou rychlostí, velikosti a barvou. Hint: Pro barvu lze použit random.choice kde se playground.Colors přetypuje na list.
+  </p>
+ </body>
+ </html>
